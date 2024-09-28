@@ -1,18 +1,16 @@
+import 'package:challangeone/Features/wallet/models/item_model.dart';
 import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MainContainer extends StatelessWidget {
   const MainContainer(
       {super.key,
-      required this.title,
-      required this.subtitle,
-      required this.image,
       required this.color,
       required this.hight,
-      required this.width});
-  final String title;
-  final String subtitle;
-  final String image;
+      required this.width,
+      required this.itemModel});
+  final ItemModel itemModel;
+
   final Color color;
   final double hight, width;
   @override
@@ -25,18 +23,18 @@ class MainContainer extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(image),
+          Image.asset(itemModel.image),
           Column(
             children: [
               Text(
-                title,
+                itemModel.title,
                 style: const TextStyle(color: AppColors.lightColor),
               ),
               const SizedBox(
                 height: 16,
               ),
               Text(
-                subtitle,
+                itemModel.subtitle,
                 style: const TextStyle(color: AppColors.lightColor),
               ),
             ],

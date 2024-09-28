@@ -12,14 +12,14 @@ class HomePageBody extends StatelessWidget {
     return const Column(
       children: [
         CustomAppBar(title: 'Hi , Romli'),
-        MainContainer(
-          width: 70,
-          hight: 100,
-          color: AppColors.lightColor,
-          image: '',
-          subtitle: r'$11.547.54',
-          title: 'Saldo Total',
-        )
+        // MainContainer(
+        //   width: 70,
+        //   hight: 100,
+        //   color: AppColors.lightColor,
+        //   image: '',
+        //   subtitle: r'$11.547.54',
+        //   title: 'Saldo Total',
+        // )
       ],
     );
   }
