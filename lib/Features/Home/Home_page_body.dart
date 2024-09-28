@@ -1,3 +1,4 @@
+import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'presnetation/Widgets/Main_Container.dart';
@@ -7,8 +8,15 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [MainContainer()],
+    return const Column(
+      children: [
+        MainContainer(
+          color: AppColors.lightColor,
+          image: '',
+          subtitle: r'$11.547.54',
+          title: 'Saldo Total',
+        )
+      ],
     );
   }
 }
