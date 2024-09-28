@@ -7,14 +7,19 @@ class MainContainer extends StatelessWidget {
       required this.title,
       required this.subtitle,
       required this.image,
-      required this.color});
+      required this.color,
+      required this.hight,
+      required this.width});
   final String title;
   final String subtitle;
   final String image;
   final Color color;
+  final double hight, width;
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: hight,
+      width: width,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(32)),
       color: color,
       child: Row(
