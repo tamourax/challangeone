@@ -1,44 +1,49 @@
-import 'package:challangeone/Features/wallet/models/item_model.dart';
 import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MainContainer extends StatelessWidget {
   const MainContainer(
       {super.key,
+      required this.title,
+      required this.subtitle,
+      required this.image,
       required this.color,
-      required this.hight,
-      required this.width,
-      required this.itemModel});
-  final ItemModel itemModel;
-
+      required this.height,
+      required this.width});
+  final String title;
+  final String subtitle;
+  final String image;
   final Color color;
-  final double hight, width;
+  final double height, width;
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: hight,
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      height: height,
       width: width,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(32)),
-      color: color,
+      decoration: BoxDecoration(color: color,borderRadius: BorderRadius.circular(26)),
+      
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(itemModel.image),
           Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                itemModel.title,
+                title,
                 style: const TextStyle(color: AppColors.lightColor),
               ),
               const SizedBox(
                 height: 16,
               ),
               Text(
-                itemModel.subtitle,
-                style: const TextStyle(color: AppColors.lightColor),
+                subtitle,
+                style: const TextStyle(color: AppColors.lightColor,fontSize: 20,fontWeight: FontWeight.w500),
               ),
             ],
           ),
+          Image.asset(image),
         ],
       ),
     );
