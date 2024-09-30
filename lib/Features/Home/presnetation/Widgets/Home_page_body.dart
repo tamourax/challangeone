@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:challangeone/Features/Home/presnetation/Widgets/categories_list_view.dart';
 import 'package:challangeone/Features/Home/presnetation/Widgets/main_list_view.dart';
-import 'package:challangeone/core/utils/Custom_App_Bar.dart';
+import 'package:challangeone/core/widgets/Custom_App_Bar.dart';
 import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

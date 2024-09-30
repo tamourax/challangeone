@@ -1,4 +1,4 @@
-import 'package:challangeone/core/utils/Custom_App_Bar.dart';
+import 'package:challangeone/core/widgets/Custom_App_Bar.dart';
 import 'package:flutter/material.dart';
 
 class WalletPageBody extends StatelessWidget {
