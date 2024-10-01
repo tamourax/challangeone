@@ -32,14 +32,14 @@ class MainContainer extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: const TextStyle(color: AppColors.lightColor),
+                style:  TextStyle(color: Colors.white.withOpacity(0.6)),
               ),
               const SizedBox(
                 height: 16,
               ),
               Text(
                 subtitle,
-                style: const TextStyle(color: AppColors.lightColor,fontSize: 20,fontWeight: FontWeight.w500),
+                style: const TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w500),
               ),
             ],
           ),

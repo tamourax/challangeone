@@ -1,7 +1,6 @@
 
 import 'dart:ui';
 
-import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class ContainerDetails extends StatelessWidget {
@@ -27,7 +26,7 @@ class ContainerDetails extends StatelessWidget {
         ),
         Text(
           '13 Feb 2023',
-          style: TextStyle(color: AppColors.lightColor, fontSize: 14),
+          style: TextStyle(color: Colors.grey, fontSize: 14),
         ),
       ],
     );

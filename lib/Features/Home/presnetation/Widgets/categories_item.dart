@@ -28,7 +28,7 @@ class CategoriesItem extends StatelessWidget {
         ),
         const Text(
           'Kirim',
-          style: TextStyle(color: AppColors.lightColor),
+          style: TextStyle(color: Colors.grey),
         )
       ],
     );

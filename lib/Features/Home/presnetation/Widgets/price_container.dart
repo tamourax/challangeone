@@ -1,6 +1,7 @@
 
 import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class PriceContainer extends StatelessWidget {
   const PriceContainer({
@@ -20,7 +21,7 @@ class PriceContainer extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: const Color.fromARGB(255, 97, 96, 95)),
           ),
-          child: const Text(r'+  $2.89',style: TextStyle(color: AppColors.lightColor,fontSize: 14,fontWeight: FontWeight.bold),),
+          child: const Text(r'+  $2.89',style: TextStyle(color: Colors.grey,fontSize: 14,fontWeight: FontWeight.bold),),
         ),]
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:challangeone/Features/transaction_details/presentation/view/transaction_details_view.dart';
 import 'package:challangeone/Features/wallet/wallet_page_veiw.dart';
 import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class PageViewShowed extends StatefulWidget {
 }
 
 class _PageViewShowedState extends State<PageViewShowed> {
-  List<Widget> pages = [const HomePageView(), const WalletPageVeiw(),const HomePageView()];
+  List<Widget> pages = [const HomePageView(), const WalletPageVeiw(),const TransactionDetailsView()];
   int selectedIndex = 0;
   oniconTaped(int index) {
     setState(() {

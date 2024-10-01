@@ -37,7 +37,7 @@ class HomePageBody extends StatelessWidget {
         Text(
           'Last Transaction',
           style: TextStyle(
-            color: AppColors.lightColor,
+            color: Colors.white,
             fontSize: 22,
             fontWeight: FontWeight.bold,
           ),
