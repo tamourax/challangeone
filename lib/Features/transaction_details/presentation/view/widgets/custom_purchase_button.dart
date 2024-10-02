@@ -2,8 +2,8 @@
 import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+class CustomPurchaseButton extends StatelessWidget {
+  const CustomPurchaseButton({
     super.key,
   });
 

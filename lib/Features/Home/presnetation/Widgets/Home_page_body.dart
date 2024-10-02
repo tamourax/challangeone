@@ -4,6 +4,7 @@ import 'package:challangeone/Features/Home/presnetation/Widgets/categories_list_
 import 'package:challangeone/Features/Home/presnetation/Widgets/main_list_view.dart';
 import 'package:challangeone/core/widgets/Custom_App_Bar.dart';
 import 'package:challangeone/core/utils/app_colors.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -14,11 +15,11 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        CustomAppBar(title: 'Hi , Romli'),
-        Padding(
+        const CustomAppBar(title: 'Hi , Romli'),
+        const Padding(
           padding: EdgeInsets.symmetric(horizontal: 18),
           child: MainContainer(
             width: double.infinity,
@@ -29,12 +30,15 @@ class HomePageBody extends StatelessWidget {
             title: 'Saldo Total',
           ),
         ),
-        SizedBox(height: 20),
-        SizedBox(
-          height: 200,
-          child: CategoriesListView(),
+        const SizedBox(height: 20),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal:(MediaQuery.of(context).size.width > 450)? (MediaQuery.of(context).size.width - 450) / 2 : 0),
+          child: const SizedBox(
+            height: 200,
+            child: CategoriesListView(),
+          ),
         ),
-        Text(
+        const Text(
           'Last Transaction',
           style: TextStyle(
             color: Colors.white,
@@ -42,7 +46,7 @@ class HomePageBody extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        Expanded(child: MainListView())
+        const Expanded(child: MainListView())
       ],
     );
   }
