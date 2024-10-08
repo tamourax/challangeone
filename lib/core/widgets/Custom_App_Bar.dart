@@ -8,9 +8,17 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(title),
+        Text(
+          title,
+          style: const TextStyle(
+              color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
+        ),
         const SizedBox(height: 8),
-        Text(subtitle),
+        Text(
+          subtitle,
+          style: const TextStyle(
+              color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+        ),
       ],
     );
   }

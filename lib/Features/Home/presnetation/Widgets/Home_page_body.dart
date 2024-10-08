@@ -15,7 +15,7 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const CustomAppBar(title: 'Hi , Romli'),
@@ -32,7 +32,10 @@ class HomePageBody extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal:(MediaQuery.of(context).size.width > 450)? (MediaQuery.of(context).size.width - 450) / 2 : 0),
+          padding: EdgeInsets.symmetric(
+              horizontal: (MediaQuery.of(context).size.width > 450)
+                  ? (MediaQuery.of(context).size.width - 450) / 2
+                  : 0),
           child: const SizedBox(
             height: 200,
             child: CategoriesListView(),

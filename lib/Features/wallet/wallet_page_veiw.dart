@@ -1,4 +1,5 @@
 import 'package:challangeone/Features/wallet/Wallet_Page_Body.dart';
+import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class WalletPageVeiw extends StatelessWidget {
@@ -6,6 +7,9 @@ class WalletPageVeiw extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WalletPageBody();
+    return Scaffold(
+      body: const WalletPageBody(),
+      backgroundColor: AppColors.secondaryColor,
+    );
   }
 }

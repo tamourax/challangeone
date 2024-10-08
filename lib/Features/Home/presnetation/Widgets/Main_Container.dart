@@ -1,4 +1,3 @@
-import 'package:challangeone/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MainContainer extends StatelessWidget {
@@ -21,8 +20,8 @@ class MainContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24),
       height: height,
       width: width,
-      decoration: BoxDecoration(color: color,borderRadius: BorderRadius.circular(26)),
-      
+      decoration:
+          BoxDecoration(color: color, borderRadius: BorderRadius.circular(26)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -32,14 +31,17 @@ class MainContainer extends StatelessWidget {
             children: [
               Text(
                 title,
-                style:  TextStyle(color: Colors.white.withOpacity(0.6)),
+                style: TextStyle(color: Colors.white.withOpacity(0.6)),
               ),
               const SizedBox(
                 height: 16,
               ),
               Text(
                 subtitle,
-                style: const TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w500),
+                style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500),
               ),
             ],
           ),
